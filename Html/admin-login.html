@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login - LifeBlood</title>
+
+    <link rel="stylesheet"
+        href="C:\python full stack\Bloodbank Management\CSS\admin-login.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="login-container">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="login-left">
+
+            <div class="admin-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <h1>LifeBlood</h1>
+
+            <h2>Admin Portal</h2>
+
+            <p>
+                Blood Bank Management System
+            </p>
+
+            <p class="description">
+
+                Manage donors, hospitals,
+                blood inventory and blood
+                requests from one place.
+
+            </p>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="login-right">
+
+            <h2>Admin Login</h2>
+
+            <p class="subtitle">
+                Login to access the administration panel
+            </p>
+
+
+            <form action="admin.html">
+
+
+                <!-- ADMIN ID -->
+
+                <label for="adminId">
+
+                    Admin ID
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    <input
+                        type="text"
+                        id="adminId"
+                        placeholder="Enter Admin ID"
+                        required>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+
+                    Email Address
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter admin email"
+                        required>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <label for="password">
+
+                    Password
+
+                </label>
+
+                <div class="input-box">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        required>
+
+                    <i class="fa-solid fa-eye"
+                        id="togglePassword">
+                    </i>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="remember">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        Remember me
+
+                    </label>
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- LOGIN -->
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Login as Admin
+
+                </button>
+
+
+            </form>
+
+
+            <!-- SECURITY -->
+
+            <div class="security">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <span>
+                    Authorized personnel only
+                </span>
+
+            </div>
+
+
+            <!-- BACK -->
+
+            <a href="C:\python full stack\Bloodbank Management\Html\home.html"
+                class="back">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Back to Home
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PASSWORD SCRIPT -->
+
+    <script>
+
+        const password =
+            document.getElementById("password");
+
+        const toggle =
+            document.getElementById("togglePassword");
+
+
+        toggle.addEventListener("click", function () {
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                toggle.classList.remove("fa-eye");
+
+                toggle.classList.add("fa-eye-slash");
+
+            }
+
+            else {
+
+                password.type = "password";
+
+                toggle.classList.remove("fa-eye-slash");
+
+                toggle.classList.add("fa-eye");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

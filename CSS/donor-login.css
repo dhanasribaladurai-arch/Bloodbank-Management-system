@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #f0fff4;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.login-container {
+
+    width: 900px;
+
+    min-height: 550px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   LEFT
+========================= */
+
+.login-left {
+
+    background: #159447;
+
+    color: white;
+
+    padding: 50px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.blood-icon {
+
+    width: 100px;
+
+    height: 100px;
+
+    background: white;
+
+    color: #159447;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 55px;
+
+    margin-bottom: 25px;
+}
+
+.login-left h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.login-left p {
+
+    font-size: 18px;
+}
+
+.description {
+
+    margin-top: 20px;
+
+    line-height: 1.7;
+
+    color: #e1ffe8;
+
+    font-size: 15px !important;
+
+    max-width: 320px;
+}
+
+
+/* =========================
+   RIGHT
+========================= */
+
+.login-right {
+
+    padding: 55px 45px;
+}
+
+.login-right h2 {
+
+    font-size: 32px;
+
+    color: #159447;
+}
+
+.subtitle {
+
+    color: #777;
+
+    margin-top: 8px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin: 18px 0 8px;
+}
+
+.input-box {
+
+    display: flex;
+
+    align-items: center;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    padding: 12px;
+}
+
+.input-box:focus-within {
+
+    border-color: #159447;
+}
+
+.input-box i {
+
+    color: #159447;
+
+    width: 25px;
+}
+
+.input-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   REMEMBER
+========================= */
+
+.remember {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+.remember label {
+
+    margin: 0;
+
+    font-weight: normal;
+}
+
+.remember input {
+
+    margin-right: 5px;
+}
+
+.remember a {
+
+    color: #159447;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #159447;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background: #107c38;
+}
+
+button i {
+
+    margin-right: 8px;
+}
+
+
+/* =========================
+   REGISTER
+========================= */
+
+.register {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.register a {
+
+    color: #159447;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* =========================
+   BACK
+========================= */
+
+.back {
+
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.back:hover {
+
+    color: #159447;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 750px) {
+
+    .login-container {
+
+        width: 95%;
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .login-left {
+
+        padding: 35px;
+
+    }
+
+    .login-right {
+
+        padding: 35px 25px;
+
+    }
+
+}

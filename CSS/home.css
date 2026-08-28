@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+
+.navbar{
+    height: 75px;
+    background: #b5121b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+.logo  {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.nav-links a:hover {
+    color: #ffd6d6;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #c41624;
+}
+
+.hero p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.primary {
+    background: #c41624;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid #c41624;
+    color: #c41624;
+}
+
+.hero-image {
+    font-size: 180px;
+    color: #c41624;
+}
+
+.blood-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.blood-section h2,
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.blood-cards {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 15px;
+}
+
+.blood-card {
+    padding: 25px 10px;
+    border-radius: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.blood-card span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #c41624;
+}
+
+.blood-card p {
+    margin-top: 8px;
+    color: green;
+}
+
+
+.features {
+    padding: 60px 8%;
+    text-align: center;
+    background: #fafafa;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.feature-card i {
+    font-size: 45px;
+    color: #c41624;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+@media(max-width:900px) {
+
+    .blood-cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .blood-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =================================
+   LOGIN DROPDOWN
+================================= */
+
+.login-menu {
+    position: relative;
+}
+
+.login-menu > a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.login-menu > a i {
+    font-size: 10px;
+}
+
+
+.login-dropdown {
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 0;
+
+    width: 210px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 10px 0;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+    display: none;
+
+    z-index: 1000;
+}
+
+
+.login-menu:hover .login-dropdown {
+
+    display: block;
+
+}
+
+
+.login-dropdown a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    color: #333 !important;
+
+    text-decoration: none;
+
+}
+
+
+.login-dropdown a:hover {
+
+    background: #f1fff5;
+
+    color: #159447 !important;
+
+}
+
+
+.login-dropdown i {
+
+    width: 20px;
+
+    color: #159447;
+
+}
+
+
+
+/* =================================
+   HERO BUTTONS
+================================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+
+}
+
+
+.hero-buttons .btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.hospital-btn {
+
+    background: #e49413;
+
+    color: white;
+
+}
+
+
+.hospital-btn:hover {
+
+    background: #c87800;
+
+}
+
+
+
+/* =================================
+   LOGIN SECTION
+================================= */
+
+.login-section {
+
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background: #f7fff9;
+}
+
+
+.login-section h2 {
+
+    font-size: 32px;
+
+    color: #159447;
+
+    margin-bottom: 10px;
+
+}
+
+
+.login-section > p {
+
+    color: #777;
+
+    margin-bottom: 35px;
+
+}
+
+
+
+/* =================================
+   LOGIN CARDS
+================================= */
+
+.login-cards {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.login-card {
+
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+}
+
+
+.login-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+}
+
+
+.login-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    margin: auto auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 32px;
+
+}
+
+
+.donor-login-card .login-icon {
+
+    background: #e1f8e8;
+
+    color: #159447;
+
+}
+
+
+.hospital-login-card .login-icon {
+
+    background: #fff1d5;
+
+    color: #e49413;
+
+}
+
+
+.admin-login-card .login-icon {
+
+    background: #e7efff;
+
+    color: #2368c4;
+
+}
+
+
+.login-card h3 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.login-card p {
+
+    color: #777;
+
+    line-height: 1.6;
+
+    min-height: 75px;
+
+}
+
+
+.login-card a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    color: white;
+
+    background: #159447;
+
+    font-weight: bold;
+
+}
+
+
+.hospital-login-card a {
+
+    background: #e49413;
+
+}
+
+
+.admin-login-card a {
+
+    background: #2368c4;
+
+}
+
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 800px) {
+
+    .login-cards {
+
+        grid-template-columns: 1fr;
+
+        max-width: 450px;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .login-dropdown {
+
+        position: static;
+
+        width: 100%;
+
+    }
+
+}

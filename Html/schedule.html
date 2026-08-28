@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donation Schedule - LifeBlood</title>
+
+    <link rel="stylesheet" href="C:\python full stack\Bloodbank Management\CSS\schedule.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-droplet"></i>
+            LifeBlood
+        </div>
+
+        <div class="nav-links">
+            <a href="C:\python full stack\Bloodbank Management\Html\donor.html">
+                <i class="fa-solid fa-arrow-left"></i>
+                Back to Donor
+            </a>
+
+            <a href="C:\python full stack\Bloodbank Management\Html\dashboard.html">
+                Dashboard
+            </a>
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <div class="page-heading">
+
+            <h1>Donation Schedule</h1>
+
+            <p>
+                Schedule your next blood donation
+            </p>
+
+        </div>
+
+
+        <div class="schedule-container">
+
+
+            <!-- LEFT: FORM -->
+
+            <div class="schedule-form">
+
+                <h2>
+                    <i class="fa-solid fa-calendar-plus"></i>
+                    Schedule Donation
+                </h2>
+
+                <form>
+
+
+                    <!-- Donor Name -->
+
+                    <label for="donorName">
+                        Donor Name
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="donorName"
+                            placeholder="Enter donor name"
+                            required>
+
+                    </div>
+
+
+                    <!-- Blood Group -->
+
+                    <label for="bloodGroup">
+                        Blood Group
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                        <select id="bloodGroup" required>
+
+                            <option value="">
+                                Select Blood Group
+                            </option>
+
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Donation Date -->
+
+                    <label for="date">
+                        Donation Date
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required>
+
+                    </div>
+
+
+                    <!-- Donation Time -->
+
+                    <label for="time">
+                        Preferred Time
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <select id="time" required>
+
+                            <option value="">
+                                Select Time
+                            </option>
+
+                            <option>09:00 AM - 10:00 AM</option>
+                            <option>10:00 AM - 11:00 AM</option>
+                            <option>11:00 AM - 12:00 PM</option>
+                            <option>02:00 PM - 03:00 PM</option>
+                            <option>03:00 PM - 04:00 PM</option>
+                            <option>04:00 PM - 05:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Donation Center -->
+
+                    <label for="center">
+                        Donation Center
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <select id="center" required>
+
+                            <option value="">
+                                Select Donation Center
+                            </option>
+
+                            <option>
+                                LifeBlood Main Center
+                            </option>
+
+                            <option>
+                                Government Hospital Blood Bank
+                            </option>
+
+                            <option>
+                                City Blood Donation Center
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Contact -->
+
+                    <label for="phone">
+                        Contact Number
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter phone number"
+                            required>
+
+                    </div>
+
+
+                    <!-- Button -->
+
+                    <button type="submit">
+
+                        <i class="fa-solid fa-calendar-check"></i>
+
+                        Confirm Schedule
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- RIGHT: INFORMATION -->
+
+            <div class="schedule-info">
+
+                <div class="info-icon">
+                    <i class="fa-solid fa-calendar-check"></i>
+                </div>
+
+                <h2>
+                    Why Schedule a Donation?
+                </h2>
+
+                <p>
+                    Scheduling your donation helps us prepare
+                    the required resources and provide you
+                    with a smooth donation experience.
+                </p>
+
+
+                <div class="info-list">
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                        <div>
+                            <h3>Choose a Date</h3>
+                            <p>
+                                Select a convenient date for
+                                your blood donation.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+                            <h3>Select Time</h3>
+                            <p>
+                                Choose an available donation
+                                time slot.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <h3>Choose Center</h3>
+                            <p>
+                                Select the nearest blood
+                                donation center.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-item">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <div>
+                            <h3>Save Lives</h3>
+                            <p>
+                                Your donation can help save
+                                someone's life.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- UPCOMING DONATION -->
+
+        <section class="upcoming">
+
+            <h2>
+                <i class="fa-solid fa-calendar-days"></i>
+                Upcoming Donation
+            </h2>
+
+            <div class="appointment">
+
+                <div class="appointment-date">
+
+                    <span>15</span>
+
+                    <small>SEP</small>
+
+                </div>
+
+
+                <div class="appointment-details">
+
+                    <h3>
+                        Blood Donation Appointment
+                    </h3>
+
+                    <p>
+                        <i class="fa-solid fa-clock"></i>
+                        10:00 AM - 11:00 AM
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        LifeBlood Main Center
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-droplet"></i>
+                        Blood Group: O+
+                    </p>
+
+                </div>
+
+
+                <div class="status">
+
+                    <span>
+                        Scheduled
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
