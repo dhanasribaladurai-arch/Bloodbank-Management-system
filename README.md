@@ -85,7 +85,6 @@ The Home Page contains:
 * 🏥 Hospital Login
 * 🛡️ Admin Login
 * 🩸 Blood Group Availability
-* ⚕️ Services Section
 
 ---
 
@@ -203,7 +202,6 @@ View Upcoming Donation
 
 * HTML5
 * CSS3
-* JavaScript
 
 ### Tools
 
@@ -234,12 +232,6 @@ LifeBlood/
 │   ├── donor.css
 │   ├── hospital.css
 │   └── admin.css
-│
-├── JS/
-│   ├── login.js
-│   ├── donor.js
-│   ├── hospital.js
-│   └── admin.js
 │
 ├── Images/
 │
