@@ -261,7 +261,7 @@ LifeBlood/
 ![Analysis Module](Screenshot/analysismodule.png)
 
 ### Contact Page
-![Contact Page](Screenshot/contactpage.png)
+![Contact Page](Screenshot/contantpage.png)
 
 ### Dashboard
 ![Dashboard](Screenshot/Dashboard.png)
@@ -270,7 +270,7 @@ LifeBlood/
 ![Donor Module](Screenshot/donormodule.png)
 
 ### Donor Page
-![Donor Page](Screenshot/donor_page.png)
+![Donor Page](Screenshot/donorpage.png)
 
 ### Homepage
 ![Homepage](Screenshot/Homepage.png)
