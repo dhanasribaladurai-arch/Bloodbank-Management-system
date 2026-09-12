@@ -254,21 +254,6 @@ LifeBlood/
 
 ## Screenshots
 
-### Homepage
-![Homepage](Screenshot/Homepage.png)
-
-### Dashboard
-![Dashboard](Screenshot/Dashboard.png)
-
-### Donor Module
-![Donor Module](Screenshot/donormodule.png)
-
-### Hospital Login
-![Hospital Login](Screenshot/hospitallogin.png)
-
-### Hospital Module
-![Hospital Module](Screenshot/hospitalmodule.png)
-
 ### Admin Module
 ![Admin Module](Screenshot/adminmodule.png)
 
@@ -277,6 +262,24 @@ LifeBlood/
 
 ### Contact Page
 ![Contact Page](Screenshot/contactpage.png)
+
+### Dashboard
+![Dashboard](Screenshot/Dashboard.png)
+
+### Donor Module
+![Donor Module](Screenshot/donormodule.png)
+
+### Donor Page
+![Donor Page](Screenshot/donor_page.png)
+
+### Homepage
+![Homepage](Screenshot/Homepage.png)
+
+### Hospital Login
+![Hospital Login](Screenshot/hospitallogin.png)
+
+### Hospital Module
+![Hospital Module](Screenshot/hospitalmodule.png)
 
 ---
 
