@@ -232,8 +232,10 @@ LifeBlood/
 │   ├── donor.css
 │   ├── hospital.css
 │   └── admin.css
-│
+|
 ├── Images/
+|
+├── Screenshot/
 │
 └── README.md
 ```
@@ -247,6 +249,34 @@ LifeBlood/
 3. Open `index.html`.
 4. Run the project using a browser or **Live Server**.
 5. Navigate through the Donor, Hospital, and Admin modules.
+
+---
+
+## Screenshots
+
+### Homepage
+![Homepage](Screenshot/Homepage.png)
+
+### Dashboard
+![Dashboard](Screenshot/Dashboard.png)
+
+### Donor Module
+![Donor Module](Screenshot/donormodule.png)
+
+### Hospital Login
+![Hospital Login](Screenshot/hospitallogin.png)
+
+### Hospital Module
+![Hospital Module](Screenshot/hospitalmodule.png)
+
+### Admin Module
+![Admin Module](Screenshot/adminmodule.png)
+
+### Analysis Module
+![Analysis Module](Screenshot/analysismodule.png)
+
+### Contact Page
+![Contact Page](Screenshot/contactpage.png)
 
 ---
 
