@@ -258,10 +258,10 @@ LifeBlood/
 ![Admin Module](Screenshot/adminmodule.png)
 
 ### Analysis Module
-![Analysis Module](Screenshot/analysismodule.png)
+![Analysis Module](Screenshot/analyticsmodule.png)
 
 ### Contact Page
-![Contact Page](Screenshot/contantpage.png)
+![Contact Page](Screenshot/contactpage.png)
 
 ### Dashboard
 ![Dashboard](Screenshot/Dashboard.png)
